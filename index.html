@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="./bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css" type="text/css">
+    <link rel="stylesheet" href="./index.css" type="text/css">
+</head>
+
+<body style="background-color: rgb(216, 228, 245);">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-md-7 my-5 mx-auto">
+                <div class="card shadow px-3" id="Zo"
+                    style="min-height: 12rem; background-color: #fff; border-radius: 6px;">
+                    <div class="card-body m-1">
+                        <p class="alert"></p>
+                        <div class="card-title d-flex">
+                            <h2 class="m-auto">Grocery Bud</h2>
+                        </div>
+                        <form action="#" id="Add-form">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control form-control-sm" id="name"
+                                    placeholder="e.g. eggs" required>
+                                <button type="button" class="btn text-dark input-group-text" id="Add"
+                                    onclick="add()">Add Item</button>
+                            </div>
+                        </form>
+                        <form action="#" id="Edit-form">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control form-control-sm" id="rename"
+                                    placeholder="e.g. eggs" required>
+                                <button type="button" class="btn text-dark input-group-text" id="edit"
+                                    onclick="update()">Edit Item</button>
+                            </div>
+                        </form>
+                        <div id="text">
+
+                        </div>
+                        <div class="Zo" style="color: red;">
+                            <p href="#" class="alert good" onclick="listClean()">Clean List</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js" type="text/JavaScript"></script>
+</body>
+
+</html>
